@@ -1,0 +1,216 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+\usepackage{natbib}
+\usepackage{palatino}
+\usepackage{hyperref}
+
+%SetFonts
+
+%SetFonts
+
+
+\title{Enterprise Crowd Funding Game, Part 1}
+\author{Niels Feldmann \and Philipp G\"unther Hoffmann \and Steven Kimbrough}
+%\date{}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\newcount\playernum
+\playernum=1
+\newcounter{player}
+\setcounter{player}{1}
+\playernum = \theplayer
+
+%\section{}
+%\subsection{}
+\ifnum\playernum=1
+\centerline{*** Player 1 ***}
+\fi
+\ifnum\playernum=2
+\centerline{*** Player 2 ***}
+\fi
+\ifnum\playernum=3
+\centerline{*** Player 3 ***}
+\fi
+\ifnum\playernum=4
+\centerline{*** Player 4 ***}
+\fi
+\ifnum\playernum=5
+\centerline{*** Player 5 ***}
+\fi
+\vskip 30 pt
+%Philipp's thesis Figure 13, page 34 and Figure 14, page 35.
+\noindent Print your name: \rule{11cm}{2pt}
+\vskip 12 pt
+
+In crowdfunding, proposers make open calls for support of  projects which they wish to be funded and investors---often drawn from the general public---decide how much, if any, funding they wish to give to the project. Normally, if the announced budget of the project is met by investor commitment, then the project goes forward, and if not, not. Kickstarter (\url{https://www.kickstarter.com/}) and Indiegogo (\url{https://www.indiegogo.com}) are well-known platforms (businesses, actually) for supporting crowdfunding. More than 100 other platforms for conducting crowdfunding activities are known to exist. Crowdfunding has become a significant part of the startup and innovation scene.
+
+In 2012 IBM conducted the first reported enterprise crowdfunding (ECF) exercise, also known as inter-organizational crowdfunding, in which 511 employees allocated company-provided money on an intranet site for employee-initiated innovation proposals \citep{muller_etal_2013}. Other firms have since followed suit. This game exercise models such ECF games in which investors are designated by the firm and endowed with a certain amount of real money to allocate to proposed internal projects. If a project receives sufficient funding, the firm promises to carry the project forward.
+
+In this game exercise you will play the role of one of 5 investors endowed with funds by your employer for investing (or not) in a series of proposed projects.
+
+
+%%(Muller, Geyer, Soule, Daniels, & Cheng, 2013). 
+%The subsequent evaluation of the ECF indicated inter alia participation rates across the whole organizational hierarchy and an increased collaboration between different departments of the company \citep{muller_etal_2013}. %(Muller, Geyer, Soule, Daniels, & Cheng, 2013). 
+%Furthermore, even though a crowdfunding platform is generally not designed to be a creativity support tool, it can ``encourage people to get their creative ideas exposed, recognized, validated and supported'' (Kuo \&\ Gerber, 2012). This enhances the economic success of companies (Florida, 2003). Moreover, ECF engage employees more intensively into the innovation management of the company (Muller, Geyer, Soule, Daniels, \&\ Cheng, 2013; Muller, Greyer, Soule, \&\ Wafer, 2014; Feldmann, Gimpel, Muller, \&\ Geyer, 2014), thus fostering the employees? belongingness and motivation in such a participatory process (Niemeyer, Wagenknecht, Teuber, \&\ Weinhardt, 2016). 
+%Convinced by the results, IBM has conducted such crowdfunding every year since then. Moreover, other companies joined the trend in recent years running their own enterprise crowdfunding implementations for innovation ideas pooling and assessment. 
+
+	%Your Utility Values per Project	Other players? utility range (approximated)
+	
+%%%%%%%%%%%%%%%%%%%%%% Player 1 %%%%%%%%%%%%%%%%%
+\ifnum\playernum=1
+
+%\theplayer
+%\fi
+
+\section{Player \theplayer\ Instructions}
+
+Assume you are an employee in an organization that has implemented enterprise crowdfunding and uses it to involve its employees in the generation and evaluation of ideas for innovation projects. Assume further that you are generally pleased with your job and the organization that employs you. You wish the organization well.
+
+You are now participating in this crowdfunding game within the company as an investor. You are one of 5 people in a group of investors who will evaluate for funding a number of proposed projecs. Each employee (player, investor) is endowed with 80 thalers (a unit of currency), which can be used to fund projects from a list of available projects, numbering 10 in all.
+
+Each project has  a funding requireent of 100 thalers. That is, each project needs to obtain a total   investment of at least 100 thalers for it to go forward to implementation. Further, you have carefully evaluated and scored is of the 10 projects on a scale of 1 to 100 with 100 being the best possible score. That is, the project's score indicates its value to you if the project is funded and goes forward.
+
+When a project does not receive enough funding from the group you do not receive any utility or value. Also,  a project that receives total contribution larger  than the funding threshold will give you NO additional utility. Thus, for example, if you score 57 on project P, you receive a score or value of 57 if the project is funded (by 100 or more thalers) by the group of five investors and 0 if it does not receive funding (of 100 or more thalers). 
+
+You do not have sufficient thalers to fund any single project by your own, let alone any of the projects of most value to you.
+
+You cannot use your thalers for private purposes but you are not forced to spend all your thalers. However, your task here is to allocate your thalers so as to achieve a maximum score  or return for yourself. To get a return it is not necessary that you have contributed some of your funds to the funded project. Every single funded project gives you some utility in return return. Your task is to allocate your thalers so as to maximize this return to you, given how the 4 other investors have allocated their thalers.
+
+Your  utility values or scores for the various projects are  aggregations of all monetary and non-monetary effects in one number if a project is fully funded. These utility values include for example a possible facilitation in your work routine, improvement of our company's public image, improvement of your company's competitive standing (job security), and so on. Other employees may have other utility values, values distinct from yours.
+
+During the game, you will need to consider the values and actions of the other players, as well as your own situation, when allocating thalers to projects.
+
+%In the second column, you get a rough range about the other players? utility (including your utility) which you can take into account to make your funding decision.
+
+Table \ref{fig:scores} summarizes the situation. There are 10 projects, P1, P2,\ldots , P10.
+Your project scores are indicated in the Project Scores row of the table. The Medians row indicates approximately the medians of the scores of the \emph{other} investors for the respective projects.
+
+%\begin{figure}[h]
+%\centering
+%\begin{tabular}{lrc}
+%A & B & C \\ \hline
+%Project 1 &	5 &	58.5---71.5 \\
+%Project 2 &	15	&  49.5---60.5 \\
+%Project 3 & 25	& 40.5---49.5 \\
+%Project 4 & 35	& 31.5---38.5 \\
+%Project 5 & 45	& 22.5---27.5 \\
+%Project 6 & 55	& 31.5---38.5 \\
+%Project 7 & 65	& 40.5---49.5 \\
+%Project 8 & 75	& 49.5---60.5 \\
+%Project 9 & 85	& 58.5---71.5 \\
+%Project 10	& 95	& 67.5---82.5 \\
+%\end{tabular}
+%\caption{Group 1. Player 1. A: Project. B: Player's values (utilities) for the project.
+%C: Approximate range of other players's values (utilities) for the project.}
+%\end{figure}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{r|cccccccccc}
+Projects: & P1 & P2 & P3 & P4 & P5 & P6 & P7 & P8 & P9 & P10 \\
+Project Scores: & 5 & 15 & 25 & 35 & 45 & 55 & 65 & 75 & 85 & 95 \\
+Medians: &80.0 & 80.0 & 50.0 & 20.0 & 20.0 & 30.0 & 40.0 & 50.0 & 60.0 & 70.0 \\
+\end{tabular}
+\caption{For player \theplayer . Scores: The player's scores or evaluations for the 10 projects. Medians: The approximate medians of the project scores for the other four players.}
+\label{fig:scores}
+\end{table}
+
+
+\subsection{Allocation, version 1}
+
+Please allocate your 80 thalers (use round sums) freely amongst the projects. Keep in mind that only fully funded projects within your group will give you a reward in return.
+
+Furthermore, overfunded projects give no additional reward to you than exactly fully funded ones.
+
+Each of the other four players in your investor group will undertake the same allocation problem, conditioned on the player's own scores and information in the player's analog of Table \ref{fig:scores}. You are not allowed to talk to each other. At the end of the experiment you will be informed which projects have been funded and how much reward you receive.
+
+Indicate the allocation of your thalers to the 10 projects. The sum of the allocations must be less than or equal to 80 thalers.
+\vskip 40 pt
+\begin{enumerate}
+\setlength\itemsep{20pt}
+\item[P1] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P2] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P3] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P4] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P5] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P6] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P7] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P8] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P9] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P10] \rule{6cm}{2pt}
+\end{enumerate}
+
+
+\subsection{Allocation, version 2}
+
+In this version of the game there are two rounds of allocations. In the first round players may allocate as much or as little of their 80 thalers as they choose. Then, all players see the net results and a second and final allocation round ensues.
+
+Assume that you have allocated 30 of your 80 thalers and that the net results of round1 are as in Table \ref{fig:scores2}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{r|cccccccccc}
+Projects: & P1 & P2 & P3 & P4 & P5 & P6 & P7 & P8 & P9 & P10 \\
+Project Scores: & 5 & 15 & 25 & 35 & 45 & 55 & 65 & 75 & 85 & 95 \\
+Medians: &80.0 & 80.0 & 50.0 & 20.0 & 20.0 & 30.0 & 40.0 & 50.0 & 60.0 & 70.0 \\
+First round  & & & & & & & & & & \\
+net allocations:  & 50 & 35 & & & & & & & 50 & 45 \\
+\end{tabular}
+\caption{For player \theplayer . Scores: The player's scores or evaluations for the 10 projects. Medians: The approximate medians of the project scores for the other four players.}
+\label{fig:scores2}
+\end{table}
+Where will you allocate your remaining (up to) 50 thalers?
+
+\vskip 40 pt
+\begin{enumerate}
+\setlength\itemsep{20pt}
+\item[P1] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P2] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P3] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P4] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P5] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P6] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P7] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P8] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P9] \rule{6cm}{2pt}
+\vskip 12 pt
+\item[P10] \rule{6cm}{2pt}
+\end{enumerate}
+
+
+\subsection{Questionnaire}
+
+Describe your intentions and reasoning for the \emph{two} (distinct and separate) allocation decisions you made.
+\newpage
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{apalike}
+\bibliography{union,sok}
+
+\end{document}  
